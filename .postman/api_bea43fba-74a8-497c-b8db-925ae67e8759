@@ -9,6 +9,7 @@ id = bea43fba-74a8-497c-b8db-925ae67e8759
 
 [config.relations.collections]
 rootDirectory = postman/collections
+files[] = {"id":"42994632-75e59c89-8fcf-4581-a52c-9785cee5f996","path":"dadjokes api.json","metaData":{"generateCollectionPreferences":"{\"requestNameSource\":\"Fallback\",\"indentCharacter\":\"Space\",\"parametersResolution\":\"Schema\",\"folderStrategy\":\"Paths\",\"includeAuthInfoInExample\":true,\"enableOptionalParameters\":true,\"keepImplicitHeaders\":false,\"includeDeprecated\":true,\"alwaysInheritAuthentication\":false,\"updateCollectionSync\":true,\"requestParametersResolution\":\"Schema\",\"exampleParametersResolution\":\"Schema\"}"}}
 
 [config.relations.collections.metaData]
 
