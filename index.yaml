@@ -5,7 +5,7 @@ info:
   description: Buy or rent Dadjokes
 
 paths:
-  /spacecrafts/{spacecraftId}:
+  /spacecrafts/{dadjokesID}:
     parameters:
       - name: spacecraftId
         description: The unique identifier of the spacecraft
