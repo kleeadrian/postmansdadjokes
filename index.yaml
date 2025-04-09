@@ -3,9 +3,16 @@ info:
   version: '1.0.0'
   title: 'Dadjokes API'
   description: Buy or rent Dadjokes
+  contact:
+    email: adrian.lee@postman.com
+    name: blah blah 
+    url: contoso.com
+
+
+   
 
 paths:
-  /spacecrafts/{dadjokesID}:
+  /spacecrafts/{spacecraftId}:
     parameters:
       - name: spacecraftId
         description: The unique identifier of the spacecraft
