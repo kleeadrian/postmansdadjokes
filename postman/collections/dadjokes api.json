@@ -25,6 +25,7 @@
 											"pm.test(\"Response time is less than 200000ms\", function () {",
 											"    pm.expect(pm.response.responseTime).to.be.below(200000);",
 											"});",
+											"",
 											""
 										],
 										"type": "text/javascript",
@@ -45,13 +46,19 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
+									"raw": "{{baseUrl}}/spacecrafts/:spacecraftId?JWT_Token={{JWT_TOKEN}}",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
 										"spacecrafts",
 										":spacecraftId"
+									],
+									"query": [
+										{
+											"key": "JWT_Token",
+											"value": "{{JWT_TOKEN}}"
+										}
 									],
 									"variable": [
 										{
