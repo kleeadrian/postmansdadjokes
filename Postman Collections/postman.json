@@ -159,6 +159,158 @@
 			]
 		},
 		{
+			"name": "Get Dadjoke ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7981c902-a313-40f7-9599-490a4a1f3fb6",
+						"exec": [
+							"pm.test(\"Response status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"  pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Validate the response schema for id, joke, and groaness fields\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('array').that.is.not.empty;",
+							"    ",
+							"    responseData.forEach(function(jokeObj) {",
+							"        pm.expect(jokeObj).to.have.property('id').that.is.a('number');",
+							"        pm.expect(jokeObj).to.have.property('joke').that.is.a('string');",
+							"        pm.expect(jokeObj).to.have.property('groaness').that.is.a('number');",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"Ensure that the id is a number\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    responseData.forEach(function(joke) {",
+							"        pm.expect(joke.id).to.be.a('number');",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"Joke is a non-empty string\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('array');",
+							"    responseData.forEach(function(jokeObj) {",
+							"        pm.expect(jokeObj.joke).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Joke should not be empty\");",
+							"    });",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0e8986e3-b6f3-4a5d-9fcd-1ded019cefef",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "c9f27bf8-0b9e-4288-8cbd-8f2d3cbe1906",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{vault:BearToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-mock-response-code",
+						"value": "404",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "{{vault:BearToken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseUrl}}/dadjoke",
+				"description": "### Get Dad Joke\n\nThis endpoint sends an HTTP GET request to retrieve a dad joke.\n\n#### Request Body\n\nThis request does not require a request body.\n\n#### Response\n\n- `id` (number): The unique identifier for the dad joke.\n    \n- `joke` (string): The dad joke retrieved from the API.\n    \n- `groaness` (number): A measure of how groan-worthy the joke is, on a scale of 0 to 10.\n    \n\nExample response:\n\n``` json\n[\n    {\n        \"id\": 0,\n        \"joke\": \"\",\n        \"groaness\": 0\n    }\n]\n\n ```"
+			},
+			"response": [
+				{
+					"id": "5968d2f9-1b2b-42e9-9524-9b4c65b57c8f",
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/dadjoke"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[{\n    \"id\":1,\n    \"joke\" : \"What happened to the Frog's car when it parked illegally? It got toad\",\n    \"groaness\": 3\n}]"
+				},
+				{
+					"id": "7d40185f-c385-4ca6-94c5-f957721c978d",
+					"name": "404",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/dadjoke"
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[{\n    \"message\" : \"Looks like you can't find any jokes. It's ok, Here's a bad one. Why couldn't developer find their hotel room. It's because they were looking for room 404\"\n}]"
+				}
+			]
+		},
+		{
 			"name": "Steal Dad Joke",
 			"event": [
 				{
