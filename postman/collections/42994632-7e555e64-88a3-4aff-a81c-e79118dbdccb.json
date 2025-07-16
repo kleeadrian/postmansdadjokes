@@ -15,7 +15,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://6b943c81-c9a3-4f4e-9d1e-f8295e5a2349.mock.pstmn.io/dadjoke/api",
+					"raw": "https://6b943c81-c9a3-4f4e-9d1e-f8295e5a2349.mock.pstmn.io/dadjoke",
 					"protocol": "https",
 					"host": [
 						"6b943c81-c9a3-4f4e-9d1e-f8295e5a2349",
@@ -24,8 +24,7 @@
 						"io"
 					],
 					"path": [
-						"dadjoke",
-						"api"
+						"dadjoke"
 					]
 				}
 			},
@@ -37,7 +36,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://6b943c81-c9a3-4f4e-9d1e-f8295e5a2349.mock.pstmn.io/dadjoke/api",
+							"raw": "https://6b943c81-c9a3-4f4e-9d1e-f8295e5a2349.mock.pstmn.io/dadjoke",
 							"protocol": "https",
 							"host": [
 								"6b943c81-c9a3-4f4e-9d1e-f8295e5a2349",
@@ -46,8 +45,7 @@
 								"io"
 							],
 							"path": [
-								"dadjoke",
-								"api"
+								"dadjoke"
 							]
 						}
 					},
