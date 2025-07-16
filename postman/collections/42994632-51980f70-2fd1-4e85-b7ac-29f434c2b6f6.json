@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "42994632-51980f70-2fd1-4e85-b7ac-29f434c2b6f6",
+		"name": "Bad Jokes API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Jokes",
+			"id": "42994632-00c1670d-f1b1-48b7-914f-be51c7360727",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/dadjokes",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"dadjokes"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "42994632-f37858dd-c4bb-4340-877d-49bbe1dcee22",
+					"name": "Get Jokes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/dadjokes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"dadjokes"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"responseTime": null,
+					"body": "{\n    \"id\":1,\n    \"joke\":\"How does AI Laugh? LLMao\",\n    \"howbad is this joke?\":\"10/10\",\n    \"answer\":\"1238213\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://f370b34c-c159-4674-b69a-85b4d5d65f3b.mock.pstmn.io",
+			"type": "default"
+		}
+	]
+}
