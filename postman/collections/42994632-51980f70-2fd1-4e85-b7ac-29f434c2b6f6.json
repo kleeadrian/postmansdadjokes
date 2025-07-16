@@ -15,12 +15,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/dadjokes",
+					"raw": "{{baseUrl}}/dadjokes/api",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
-						"dadjokes"
+						"dadjokes",
+						"api"
 					]
 				}
 			},
