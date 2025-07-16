@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "42994632-7e555e64-88a3-4aff-a81c-e79118dbdccb",
+		"name": "Jokes API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get joke",
+			"id": "42994632-e80e0381-24b8-45f8-b99c-6db12c93ba11",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://6b943c81-c9a3-4f4e-9d1e-f8295e5a2349.mock.pstmn.io/dadjoke",
+					"protocol": "https",
+					"host": [
+						"6b943c81-c9a3-4f4e-9d1e-f8295e5a2349",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"dadjoke"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "42994632-9de6c9b0-a6ab-414e-89a2-60f25c323325",
+					"name": "Get joke",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://6b943c81-c9a3-4f4e-9d1e-f8295e5a2349.mock.pstmn.io/dadjoke",
+							"protocol": "https",
+							"host": [
+								"6b943c81-c9a3-4f4e-9d1e-f8295e5a2349",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"dadjoke"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"responseTime": null,
+					"body": "{\n    \"id\":3,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n}"
+				}
+			]
+		}
+	]
+}
