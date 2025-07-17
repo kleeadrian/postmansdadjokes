@@ -92,8 +92,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "1",
-									"type": "text"
+									"value": "1"
 								}
 							]
 						}
@@ -115,7 +114,7 @@
 						}
 					],
 					"responseTime": null,
-					"body": "[{\n    \"id\":1,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n}\n"
+					"body": "{\n    \"id\":1,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n}\n"
 				},
 				{
 					"id": "42994632-3eddeb63-c076-4461-b5c6-16051e95ae52",
@@ -155,7 +154,7 @@
 						}
 					],
 					"responseTime": null,
-					"body": "[{\n    \"id\":1,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n},\n{\n    \"id\":2,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n},\n{\n    \"id\":3,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n}\n]"
+					"body": "[\n{\n    \"id\":2,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n}\n]"
 				},
 				{
 					"id": "42994632-a61679ef-817b-46ad-b2cd-5cc27ec58b09",
