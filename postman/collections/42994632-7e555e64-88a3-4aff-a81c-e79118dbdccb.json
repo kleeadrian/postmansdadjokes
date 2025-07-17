@@ -77,7 +77,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://6b943c81-c9a3-4f4e-9d1e-f8295e5a2349.mock.pstmn.io/dadjoke/api",
+							"raw": "https://6b943c81-c9a3-4f4e-9d1e-f8295e5a2349.mock.pstmn.io/dadjoke/api?id=1",
 							"protocol": "https",
 							"host": [
 								"6b943c81-c9a3-4f4e-9d1e-f8295e5a2349",
@@ -88,6 +88,13 @@
 							"path": [
 								"dadjoke",
 								"api"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
 							]
 						}
 					},
@@ -108,7 +115,7 @@
 						}
 					],
 					"responseTime": null,
-					"body": "[{\n    \"id\":1,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n},\n{\n    \"id\":2,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n},\n{\n    \"id\":3,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n}\n]"
+					"body": "[{\n    \"id\":1,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n}\n"
 				},
 				{
 					"id": "42994632-3eddeb63-c076-4461-b5c6-16051e95ae52",
