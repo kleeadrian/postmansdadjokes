@@ -71,6 +71,46 @@
 					"body": "[{\n    \"id\":1,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n},\n{\n    \"id\":2,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n},\n{\n    \"id\":3,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n}\n]"
 				},
 				{
+					"id": "42994632-70ccadbe-f2a7-4b26-bfea-e5726753ed0e",
+					"name": "Dynamic",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://6b943c81-c9a3-4f4e-9d1e-f8295e5a2349.mock.pstmn.io/dadjoke/api",
+							"protocol": "https",
+							"host": [
+								"6b943c81-c9a3-4f4e-9d1e-f8295e5a2349",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"dadjoke",
+								"api"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"responseTime": null,
+					"body": "[{\n    \"id\":1,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n},\n{\n    \"id\":2,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n},\n{\n    \"id\":3,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n}\n]"
+				},
+				{
 					"id": "42994632-e200420e-b201-41b1-8516-66b668e84cc7",
 					"name": "Get Joke ID 1",
 					"originalRequest": {
