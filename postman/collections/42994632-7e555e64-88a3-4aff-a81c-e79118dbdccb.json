@@ -26,6 +26,14 @@
 					"path": [
 						"dadjoke",
 						"api"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
 					]
 				}
 			},
