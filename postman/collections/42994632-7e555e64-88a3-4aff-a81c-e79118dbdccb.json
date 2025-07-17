@@ -32,7 +32,7 @@
 			"response": [
 				{
 					"id": "42994632-9de6c9b0-a6ab-414e-89a2-60f25c323325",
-					"name": "Get joke",
+					"name": "Get all joke",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
