@@ -108,7 +108,7 @@
 						}
 					],
 					"responseTime": null,
-					"body": "[{\n    \"id\":1,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n},\n{\n    \"id\":2,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n},\n{\n    \"id\":3,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n}\n]"
+					"body": "[{\n    \"id\":{{$randomAlphaNumeric}},\n    \"joke\":{{$randomCountry}}\n}\n]"
 				},
 				{
 					"id": "42994632-e200420e-b201-41b1-8516-66b668e84cc7",
