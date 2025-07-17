@@ -250,6 +250,47 @@
 					],
 					"responseTime": null,
 					"body": "{\n    \"error\":\"Nothing found\"\n}"
+				},
+				{
+					"id": "42994632-5994e565-45b1-4ae4-b242-cac79a359a92",
+					"name": "Get joke",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-mock-response-name",
+								"value": "Dynamic",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://6b943c81-c9a3-4f4e-9d1e-f8295e5a2349.mock.pstmn.io/dadjoke/api",
+							"protocol": "https",
+							"host": [
+								"6b943c81-c9a3-4f4e-9d1e-f8295e5a2349",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"dadjoke",
+								"api"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"responseTime": null,
+					"body": null
 				}
 			]
 		}
