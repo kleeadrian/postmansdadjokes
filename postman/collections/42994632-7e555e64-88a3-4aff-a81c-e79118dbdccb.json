@@ -72,12 +72,12 @@
 				},
 				{
 					"id": "42994632-a61679ef-817b-46ad-b2cd-5cc27ec58b09",
-					"name": "Fail",
+					"name": "Get joke ID",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://6b943c81-c9a3-4f4e-9d1e-f8295e5a2349.mock.pstmn.io/dadjoke/api",
+							"raw": "https://6b943c81-c9a3-4f4e-9d1e-f8295e5a2349.mock.pstmn.io/dadjoke/api/id",
 							"protocol": "https",
 							"host": [
 								"6b943c81-c9a3-4f4e-9d1e-f8295e5a2349",
@@ -87,12 +87,13 @@
 							],
 							"path": [
 								"dadjoke",
-								"api"
+								"api",
+								"id"
 							]
 						}
 					},
-					"status": "OK",
-					"code": 200,
+					"status": "Bad Request",
+					"code": 400,
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
@@ -108,7 +109,7 @@
 						}
 					],
 					"responseTime": null,
-					"body": "[{\n    \"id\":1,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n},\n{\n    \"id\":2,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n},\n{\n    \"id\":3,\n    \"joke\":\"What noise does a plane make when it lands? BOE-ING!\",\n    \"how bad is this joke?\":\"10/10\"\n}\n]"
+					"body": "{\n    \"error\":\"Nothing found\"\n}"
 				}
 			]
 		}
