@@ -72,7 +72,7 @@
 				},
 				{
 					"id": "42994632-a61679ef-817b-46ad-b2cd-5cc27ec58b09",
-					"name": "Get all joke Copy",
+					"name": "Get joke ID",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
